@@ -1,0 +1,27 @@
+$mainColor:#5383FF;
+$textPrimary:212529;
+
+
+@mixin xl-screen{
+    @media (max-width:1440px) {
+        @content;
+    } 
+}
+
+@mixin lg-screen{
+    @media (max-width:1024px) {
+        @content;
+    } 
+}
+
+@mixin pad{
+    @media (max-width:768px) {
+        @content;
+    } 
+}
+
+@mixin phone{
+    @media (max-width:512px) {
+        @content;
+    }   
+}
