@@ -2,7 +2,7 @@
   <div class="hello">
     <img class="d-block mx-auto" src="../assets/home/logo.svg" alt="">
     <h1 class="typing typewriter en_font text-center">HI ! I’m Tracy</h1>
-    <p class="text-center">往前端工程邁進，<strong>愛貓成癡的女子02🐈</strong></p>
+    <p class="text-center">往前端工程邁進，<strong>愛貓成癡的女子0cc2xccx0🐈</strong></p>
     <div class="row px-6">
       <div class="col-6">
          <router-link  to="/works" >
