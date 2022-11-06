@@ -30,7 +30,7 @@
 
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 //animate*--//
 body {
   margin: 0;
@@ -52,6 +52,7 @@ $amount: 40;
   border-radius: $particleSize;
   backface-visibility: hidden;
   position: absolute;
+  filter: blur(1.5rem);
   animation-name: move;
   animation-duration: $animationDuration;
   animation-timing-function: linear;
