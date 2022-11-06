@@ -201,7 +201,7 @@
                 </div>
                 <div class="col-lg-8 video">
                     <img src="../assets/charging/device.png" class="img-fluid deviece">
-                    <video  autoplay control class="video-proccess" type="video/mp4"  src="../assets/charging/process.mp4"></video>
+                    <!-- <video  autoplay control class="video-proccess" type="video/mp4"  src="../assets/charging/process.mp4"></video> -->
                 </div>
             </div>
         </div>
