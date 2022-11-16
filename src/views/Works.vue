@@ -1,15 +1,8 @@
 <template>
 <div id="work">
-  <div class="row" data-aos="fade-up"  data-aos-duration="800" data-aos-once="true" data-aos-delay="600">
-    <div class="banner d-flex flex-column justify-content-center align-items-center">
-      <p class="h2 en_font">Project</p>
-      <p class="h5 text-muted">Web、UI、Vanilla JS、Design</p>
-    </div>
-  </div>
-
   <div class="web">
     <div class="container" >
-      <div class="row" data-aos="fade-up"  data-aos-duration="800" data-aos-once="true" data-aos-delay="600">
+      <div  data-aos="fade-up"  data-aos-duration="800" data-aos-once="true" data-aos-delay="600">
         <p class="h3 en_font text-center">- Web -</p>
         <div class="row mt-4 d-flex justify-content-center">
           <div class="col-lg-4 mt-4" v-for="item in web" :key="item.blank">
@@ -37,7 +30,7 @@
 
   <div class="UI">
     <div class="container">
-      <div class="row" data-aos="fade-up"  data-aos-duration="800" data-aos-once="true" data-aos-delay="600">
+      <div  data-aos="fade-up"  data-aos-duration="800" data-aos-once="true" data-aos-delay="600">
         <p class="h3 en_font text-center">- UI -</p>
         <div class="row mt-4 d-flex justify-content-center">
           <div class="col-lg-4 mt-2" v-for="item in ui" :key="item.blank">
@@ -65,7 +58,7 @@
 
   <div class="JS">
     <div class="container">
-      <div class="row" data-aos="fade-up"  data-aos-duration="800" data-aos-once="true" data-aos-delay="600">
+      <div  data-aos="fade-up"  data-aos-duration="800" data-aos-once="true" data-aos-delay="600">
         <p class="h3 en_font text-center">- Vanilla JS -</p>
         <div class="row mt-4 d-flex justify-content-center">
           <div class="col-lg-4 mt-2" v-for="item in js" :key="item.blank">
@@ -141,7 +134,6 @@
       </div>
     </div>
   </div>
-  <Top></Top>
   <Footer></Footer>
 
 </div>
@@ -156,6 +148,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  @include xl-screen{
+    height: 400px;
+  }
   @include pad{
     height: 500px;
   }
@@ -172,8 +167,8 @@
   box-shadow: 2px 2px 8px #00000010
 }
 .card-work{
-  max-width: 320px;
-  height: 280px;
+  max-width: 400px;
+  height: 320px;
   margin-top: 20px;
 }
 .card-text{
@@ -184,17 +179,17 @@
   position: relative;
 }
 .card-img-top{
-  height: 150px;
+  height: 200px;
 }
 .mask{
   cursor: pointer;
   position: absolute;
   width: 100%;
-  height: 150px;
+  height: 200px;
   background-color: #020202;
   font-size: 24px;
   text-align: center;
-  line-height: 150px;
+  line-height:200px;
   counter-reset: #ddd;
   opacity: 0;
   transition: 0.5s;
@@ -296,12 +291,10 @@
 
 <script>
 import Footer from '../components/Footer.vue'
-import Top from '../components/Top.vue'
 
 export default {
   components: {
-    Footer,
-    Top
+    Footer
   },
   data () {
     return {
@@ -321,7 +314,7 @@ export default {
         title: 'Pretso 官網',
         content: 'SVG互動網站，使用BS4框架以及jQuery。擔任網頁前端程式撰寫以及協同設計',
         srcImg: 'web03.png',
-        blank: 'https://ecsserviceportal.z23.web.core.windows.net/main_page/main_page_Energy/index.html'
+        blank: 'https://madori452.github.io/2022_web/dist/#/works/Pretso'
       },
       {
         title: 'OMNIA Q1',
@@ -345,6 +338,12 @@ export default {
         title: 'Pretso Charging App',
         content: '快速預約附近充電格，藉由結合優惠活動以及會員制度，刺激消費並培養新的消費流。。',
         srcImg: 'ui02.png',
+        blank: 'https://www.behance.net/gallery/156170575/Pretso-Charging-App'
+      },
+      {
+        title: '茶癮',
+        content: '快速預約附近充電格，藉由結合優惠活動以及會員制度，刺激消費並培養新的消費流。。',
+        srcImg: 'ui03.png',
         blank: 'https://www.behance.net/gallery/156170575/Pretso-Charging-App'
       }
       ],

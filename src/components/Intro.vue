@@ -2,7 +2,7 @@
   <div class="hello">
     <img class="d-block mx-auto" src="../assets/home/logo.svg" alt="">
     <h1 class="typing typewriter en_font text-center">HI ! I’m Tracy</h1>
-    <p class="text-center">往前端工程邁進，<strong>愛貓成癡的女子0cc2xccx0🐈</strong></p>
+    <p class="text-center">在學習前端的路上!<strong>愛貓成癡的女子🐈 </strong></p>
     <div class="row px-6">
       <div class="col-6">
          <router-link  to="/works" >
@@ -38,11 +38,14 @@ h1.typing{
 .btn{
   width: 120px;
 }
+.btn:hover{
+  color:#fff;
+}
 .typewriter  {
   color: $textPrimary;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .12em solid $mainColor; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+  overflow: hidden;
+  border-right: .12em solid $mainColor;
+  white-space: nowrap;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .09em; /* Adjust as needed */
   animation:

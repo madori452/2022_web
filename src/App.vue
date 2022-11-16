@@ -1,7 +1,8 @@
 <template>
 
 <Navbar></Navbar>
-
+<Footer></Footer>
+<Top></Top>
 </template>
 
 <style lang="scss">
@@ -26,9 +27,12 @@ a{
 </style>
 <script>
 import Navbar from '../src/components/Navbar.vue'
+import Top from '../src/components/Top.vue'
+
 export default {
   components: {
-    Navbar
+    Navbar,
+    Top
   }
 
 }

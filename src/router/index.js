@@ -14,10 +14,11 @@ const routes = [
     component: () => import('../views/Works.vue')
   },
   {
-    path: '/charging',
-    name: 'Charging',
-    component: () => import('../views/Charging.vue')
+    path: '/works/Pretso',
+    name: 'Pretso',
+    component: () => import('../views/Works/PretsoWeb.vue')
   },
+
   {
     path: '/portfolio',
     name: 'Portfolio',

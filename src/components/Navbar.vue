@@ -10,17 +10,14 @@
       <div class="navbar-nav">
           <router-link  to="/portfolio" class="nav-link me-3" aria-current="page"  href="#" @click="closeNav">
             <p class="mb-0">關於我</p>
-            <p class="sub-title mb-0">About Me</p>
-          </router-link>
+         </router-link>
 
           <router-link  to="/works" class="nav-link me-3" aria-current="page" href="#" @click="closeNav">
             <p class="mb-0">專案作品</p>
-            <p class="sub-title mb-0">Project</p>
           </router-link>
 
-          <a class="nav-link" href="#"  @click="closeNav">
+          <a class="nav-link" target="_blank" href="https://drive.google.com/file/d/1P7Q8L_IFE3GGn0pItqpJl8I38shw6jww/view?usp=share_link"  @click="closeNav">
             <p class="mb-0">下載履歷</p>
-            <p class="sub-title mb-0">Resume</p>
           </a>
       </div>
     </div>
@@ -47,7 +44,7 @@
   flex-grow: 0;
 }
 .navbar-bgscroll{
-  background: #ffffff70 !important;
+  background: #fff !important;
   transition: 1s;
 }
 .navbar-toggler{
@@ -68,8 +65,7 @@ a{
 export default {
   data () {
     return {
-      // Navtoggle: false
-
+      Navtoggle: false
     }
   },
 

@@ -26,7 +26,6 @@
       <span></span>
       <span></span>
   </div>
-      <Top></Top>
 
 </template>
 
@@ -49,13 +48,13 @@ $amount: 40;
 .background span {
   width: $particleSize;
   height: $particleSize;
-  border-radius: $particleSize;
+  border-radius: 50%;
   backface-visibility: hidden;
   position: absolute;
-  filter: blur(1.5rem);
   animation-name: move;
   animation-duration: $animationDuration;
   animation-timing-function: linear;
+
   animation-iteration-count: infinite;
   $colors: (
     #6b92f7ab,
@@ -70,8 +69,8 @@ $amount: 40;
       animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
       animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
       transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
-      $blurRadius: (random() + 0.5) * $particleSize * 0.5;
       $x: if(random() > 0.5, -1, 1);
+      $blurRadius: 15vmin;
       box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
     }
   }
@@ -127,12 +126,10 @@ $amount: 40;
 <script>
 // @ is an alias to /src
 import Intro from '@/components/Intro.vue'
-import Top from '@/components/Top.vue'
 
 export default {
   components: {
-    Intro,
-    Top
+    Intro
   },
   methods: {
     getIntro () {
