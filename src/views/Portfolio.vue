@@ -3,6 +3,23 @@
         <!-- 頁首 -->
         <div class="row">
             <div class="bg-mine" data-aos="fade-up"  data-aos-duration="800" data-aos-once="true" data-aos-delay="600">
+
+                <div class="container container-bg">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="../assets/work/head.png" class="figure-img img-fluid ms-auto d-block head">
+                        </div>
+                        <div class="col-md-10">
+                            <h2 class="en_font black">Hi ! I’m Tracy</h2>
+                            <div class="row"><span class="pill-type">網頁前端程式 | 網頁前端設計 | 介面設計</span></div>
+                            <p class="fst-italic h6 subtitle">2022對我來說是充滿挑戰的一年，我將近7個月沈浸在前端程式中</p>
+                            <p class="profile-content-color">
+                                有四年以上的前端設計經驗，曾經在不同產業有設計以及前端協同合作的經歷。<br/>
+                                因為想學習更多前端知識，目前正在自我學習前端語法，希望能將「程式」以及「設計」結合，設計出更多有趣的作品。
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="background">
                     <span></span>
                     <span></span>
@@ -21,23 +38,6 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
-
-                <div class="container container-bg">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <img src="../assets/work/head.png" class="figure-img img-fluid ms-auto d-block head">
-                        </div>
-                        <div class="col-md-10">
-                            <h2 class="en_font black">Hi ! I’m Tracy</h2>
-                            <div class="row"><span class="pill-type">網頁前端程式 | 網頁前端設計 | 介面設計</span></div>
-                            <p class="fst-italic h6 subtitle">2022對我來說是充滿挑戰的一年，我將近7個月沈浸在前端程式中</p>
-                            <p class="profile-content-color">
-                                有四年以上的前端設計經驗，曾經在不同產業有設計以及前端協同合作的經歷。<br/>
-                                因為想學習更多前端知識，目前正在自我學習前端語法，希望能將「程式」以及「設計」結合，設計出更多有趣的作品。
-                            </p>
-                        </div>
-                    </div>
                 </div>
 
             </div>
