@@ -42,7 +42,7 @@ body {
   background: #fff;
 }
 
-$particleSize:300px;
+$particleSize:420px;
 $animationDuration: 2.5s;
 $amount: 40;
 .background span {
@@ -57,9 +57,9 @@ $amount: 40;
 
   animation-iteration-count: infinite;
   $colors: (
-    #1348d2cc,
-    #03a9f4,
-    #ffeb3bf2
+    #6b92f7ab,
+    #03a9f454,
+    #ffeb3b9c
   );
   @for $i from 1 through $amount {
     &:nth-child(#{$i}) {
