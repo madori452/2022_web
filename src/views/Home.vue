@@ -42,7 +42,7 @@ body {
   background: #fff;
 }
 
-$particleSize:60vmin;
+$particleSize:200px;
 $animationDuration: 3s;
 $amount: 40;
 .background span {
@@ -57,7 +57,7 @@ $amount: 40;
 
   animation-iteration-count: infinite;
   $colors: (
-    #6b92f7ab,
+    #f00,
     #03a9f454,
     #ffeb3b91
   );
@@ -70,7 +70,7 @@ $amount: 40;
       animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
       transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
       $x: if(random() > 0.5, -1, 1);
-      $blurRadius: 15vmin;
+      $blurRadius: 200px;
       box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
     }
   }
