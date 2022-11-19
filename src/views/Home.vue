@@ -50,8 +50,8 @@ $amount: 40;
   width: $particleSize;
   height: $particleSize;
   @include xl-screen{
-    width:280px;
-    height: 280px;
+    width:300px;
+    height: 300px;
   }
    @include phone{
      width:180px;
@@ -81,6 +81,10 @@ $amount: 40;
       transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
       $x: if(random() > 0.5, -1, 1);
       $blurRadius: 80px;
+      @include xl-screen{
+         $blurRadius: 100px;
+        box-shadow: 350px 0 70px currentColor;
+       }
        @include phone{
          $blurRadius: 40px;
         box-shadow: 300px 0 50px currentColor;
