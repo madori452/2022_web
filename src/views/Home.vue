@@ -54,8 +54,8 @@ $amount: 40;
     height: 280px;
   }
    @include phone{
-     width:400px;
-    height:400px;
+     width:180px;
+    height:180px;
     animation-duration: 1.5s;
    }
   border-radius: 50%;
@@ -81,6 +81,10 @@ $amount: 40;
       transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
       $x: if(random() > 0.5, -1, 1);
       $blurRadius: 80px;
+       @include phone{
+         $blurRadius: 40px;
+        box-shadow: 300px 0 50px currentColor;
+       }
       box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
     }
   }
