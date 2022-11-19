@@ -273,7 +273,6 @@ $amount: 40;
 .bg-mine{
     padding: 150px 0;
     overflow: hidden;
-
     @include phone{
         padding: 100px 0;
     }

@@ -30,10 +30,11 @@
 </template>
 
 <style lang="scss" scoped>
+@import "../assets/scss/main.scss";
+
 //animate*--//
 body {
   margin: 0;
-  // overflow: hidden;
 }
 
 .background {
@@ -42,12 +43,16 @@ body {
   background: #fff;
 }
 
-$particleSize:420px;
+$particleSize:380px;
 $animationDuration: 2.5s;
 $amount: 40;
 .background span {
   width: $particleSize;
   height: $particleSize;
+  @include xl-screen{
+    width:280px;
+    height: 280px;
+  }
   border-radius: 50%;
   backface-visibility: hidden;
   position: absolute;
