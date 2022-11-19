@@ -53,6 +53,11 @@ $amount: 40;
     width:280px;
     height: 280px;
   }
+   @include phone{
+     width:400px;
+    height:400px;
+    animation-duration: 1.5s;
+   }
   border-radius: 50%;
   backface-visibility: hidden;
   position: absolute;
