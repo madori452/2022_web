@@ -138,8 +138,8 @@
         <!-- 技能 -->
         <div class="container dash" data-aos="fade-up"  data-aos-duration="1500" data-aos-once="true" data-aos-delay="300"></div>
         <div class="container experience">
-            <h2 class="en_font black offset-lg-1" data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true">Skill</h2>
-            <div class="row mt-3 offset-lg-1" data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true">
+            <h2 class="en_font black offset-lg-1" data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true"  data-aos-delay="600">Skill</h2>
+            <div class="row mt-3 offset-lg-1" data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true" data-aos-delay="600">
                 <div class="col-lg-2 px-sm-0">
                     <h5 class="en_font">Web Layout</h5>
                     <p class="dash-border"></p>
@@ -232,6 +232,10 @@ body {
 $particleSize:300px;
 $animationDuration: 3s;
 $amount: 40;
+.background{
+    position: relative;
+    z-index: 1;
+}
 .background span {
   width: $particleSize;
   height: $particleSize;
@@ -337,6 +341,8 @@ img.core{
     max-width: 800px;
     padding: 50px 20px;
     background-color: #fff;
+    position: relative;
+    z-index: 2;
     border-radius: 20px;
     box-shadow: 5px 5px 12px #dddddd29;
     @include pad{
