@@ -30,7 +30,7 @@
 @import "@/assets/scss/main.scss";
 
 .navbar{
-  z-index: 2;
+  z-index: 299;
   @include pad{
     background-color: #ffffff96;
   }

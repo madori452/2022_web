@@ -2,7 +2,7 @@
   <div class="hello">
     <img class="d-block mx-auto" src="../assets/home/logo.svg" alt="">
     <h1 class="typing typewriter en_font text-center">HI ! I’m Tracy</h1>
-    <p class="text-center">在學習前端的路上!<strong>愛貓成癡的女子🐈 </strong></p>
+    <p class="text-center">融和<strong>「前端技術」</strong>以及<strong>「使用者體驗」</strong>創造有趣的作品!🐈 </p>
   </div>
 </template>
 

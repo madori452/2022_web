@@ -69,37 +69,28 @@
     </swiper>
 
     <!-- 手機swiper -->
-    <swiper
-      :slidesPerView="1"
-      :centeredSlides="true"
-      :offsetPxAfter="100"
-      :spaceBetween="20"
-      :autoplay="{
-        delay: 25000,
-        disableOnInteraction: false,
-      }"
-    :modules="modules"
-      class="d-block d-sm-none mySwiper mt-4"
-    >
-    <swiper-slide v-for="item in web" :key="item.blank">
-      <div class="card-work w-80 w-sm-100">
-        <div class="mask"></div>
-        <div class="bg-image" >
-          <a :href="item.blank" target="_blank">
-          <div class="mask en_font">
-              See More
+    <div class="d-block d-sm-none mySwiper mt-4">
+      <div class="card-all" v-for="item in web" :key="item.blank">
+        <div class="card-work w-80 w-sm-100">
+          <div class="mask"></div>
+          <div class="bg-image" >
+            <a :href="item.blank" target="_blank">
+            <div class="mask en_font">
+                See More
+              </div>
+            </a>
+            <div class="rounded-0 card-img-top" :style="{backgroundImage:'url('+require('../assets/work/all/' + item.srcImg)+')'}"></div>
+          </div>
+          <div class="card-body rounded-0">
+            <h5 class="card-title en_font mt-4">{{item.title}}</h5>
+            <p class="card-text px-3">{{item.content}}</p>
+            <div class="row mx-auto d-block ms-2">
+              <span class="text-primary tag flex-row" v-for="(tags,index) in item.tag" :key="index">{{tags}}</span>
             </div>
-          </a>
-          <div class="rounded-0 card-img-top" :style="{backgroundImage:'url('+require('../assets/work/all/' + item.srcImg)+')'}"></div>
-        </div>
-        <div class="card-body rounded-0">
-          <h5 class="card-title en_font mt-4">{{item.title}}</h5>
-          <p class="card-text px-3">{{item.content}}</p>
-          <span class="text-primary tag flex-row" v-for="(tags,index) in item.tag" :key="index">{{tags}}</span>
+          </div>
         </div>
       </div>
-    </swiper-slide>
-    </swiper>
+    </div>
   </div>
 
 </template>
@@ -224,8 +215,10 @@ span.tag{
 h5.card-title {
   @include phone{
     font-size: 18px;
+    text-align: center;
   }
 }
+// -------mobile
 .card-work{
   box-shadow: 2px 2px 8px #00000010;
   height: 340px;
@@ -237,11 +230,18 @@ h5.card-title {
     height: 370px;
   }
 }
+.card-all{
+  width: 80%;
+  margin: 20px auto;
+}
+// -------end mobile
+
 .card-text{
   color: #6a6a6a;
   font-size: 14px;
   @include phone{
-    font-size: 12px;
+    font-size: 13px;
+    text-align: left;
   }
 }
 .bg-image{

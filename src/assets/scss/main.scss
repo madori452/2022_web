@@ -20,7 +20,7 @@ $textContent:#747474;
     } 
 }
 
-@mixin xd{
+@mixin pad{
     @media (max-width:768px) {
         @content;
     } 

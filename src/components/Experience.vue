@@ -123,6 +123,8 @@ p.due{
 @keyframes pulse-ring {
   0% {
     transform: scale(.33);
+    -webkit-transform:scale(.33);
+
   }
   80%, 100% {
     opacity: 0;

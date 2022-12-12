@@ -23,6 +23,7 @@
   height: 150px;
   background-color: #000;
   position: fixed;
+  z-index: 99;
   bottom: 0px;
   color:#fff;
 
