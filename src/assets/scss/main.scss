@@ -1,6 +1,7 @@
 $mainColor:#5383FF;
-$textPrimary:212529;
-
+$textPrimary:#212529;
+$textTitle:#525252;
+$textContent:#747474;
 
 @mixin xl-screen{
     @media (max-width:1440px) {
@@ -13,8 +14,13 @@ $textPrimary:212529;
         @content;
     } 
 }
+@mixin pad-max{
+    @media (max-width:992px) {
+        @content;
+    } 
+}
 
-@mixin pad{
+@mixin xd{
     @media (max-width:768px) {
         @content;
     } 
