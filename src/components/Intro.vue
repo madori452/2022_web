@@ -3,21 +3,6 @@
     <img class="d-block mx-auto" src="../assets/home/logo.svg" alt="">
     <h1 class="typing typewriter en_font text-center">HI ! I’m Tracy</h1>
     <p class="text-center">在學習前端的路上!<strong>愛貓成癡的女子🐈 </strong></p>
-    <div class="row px-6">
-      <div class="col-6">
-         <router-link  to="/works" >
-          <button class="d-block mx-auto btn btn-outline-primary rounded-pill">我的專案</button>
-         </router-link>
-      </div>
-       <div class="col-6">
-          <router-link  to="/portfolio" >
-          <button class="d-block mx-auto btn btn-outline-primary rounded-pill">關於我</button>
-         </router-link>
-      </div>
-
-    </div>
-     <router-view/>
-
   </div>
 </template>
 

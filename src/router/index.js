@@ -13,21 +13,11 @@ const routes = [
     name: 'Works',
     component: () => import('../views/Works.vue')
   },
-  {
-    path: '/works/Pretso',
-    name: 'Pretso',
-    component: () => import('../views/Works/PretsoWeb.vue')
-  },
 
   {
     path: '/portfolio',
     name: 'Portfolio',
     component: () => import('../views/Portfolio.vue')
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: () => import('../views/About.vue')
   }
 ]
 

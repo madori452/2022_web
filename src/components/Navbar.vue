@@ -8,16 +8,16 @@
     </button>
     <div ref="burgerMenu" class="collapse navbar-collapse justify-content-end"  id="navbarNavAltMarkup">
       <div class="navbar-nav">
-          <router-link  to="/portfolio" class="nav-link me-3" aria-current="page"  href="#" @click="closeNav">
-            <p class="mb-0">關於我</p>
-         </router-link>
+          <div  href="nav-link" id="About" class="nav-link me-3" aria-current="page" @click="about">
+            <p class="mb-0 h5 en_font mt-2">About Me</p>
+         </div>
 
-          <router-link  to="/works" class="nav-link me-3" aria-current="page" href="#" @click="closeNav">
-            <p class="mb-0">專案作品</p>
-          </router-link>
+          <div  href="nav-link" class="nav-link me-3" aria-current="page"  @click="experience">
+            <p class="mb-0 h5 en_font mt-2">Experience</p>
+          </div>
 
           <a class="nav-link" target="_blank" href="https://drive.google.com/file/d/1P7Q8L_IFE3GGn0pItqpJl8I38shw6jww/view?usp=share_link"  @click="closeNav">
-            <p class="mb-0">下載履歷</p>
+            <p class="mb-0 h5 en_font resume">Resume</p>
           </a>
       </div>
     </div>
@@ -47,10 +47,19 @@
   background: #fff !important;
   transition: 1s;
 }
+.resume{
+  background-color: $mainColor;
+  border-radius: 20px;
+  color: #fff;
+  padding: 8px 10px;
+}
 .navbar-toggler{
   @include pad{
     border:none
   }
+}
+.nav-link{
+  cursor: pointer;
 }
 .navbar-toggler-icon-open{
  background-image: url('../assets/openNav.svg');
@@ -61,7 +70,7 @@ a{
 }
 </style>
 <script>
-
+// import $ from 'jquery'
 export default {
   data () {
     return {
@@ -91,11 +100,24 @@ export default {
         this.$refs.burgerNav.classList.remove('navbar-toggler-icon-open')
         this.$refs.burgerMenu.classList.remove('show')
       }
+    },
+    about () {
+      this.closeNav()
+      const elementBody = document.documentElement
+      elementBody.scrollTop = 500
+    },
+    experience () {
+      this.closeNav()
+      const elementBody = document.documentElement
+      if (window.innerWidth < 512) {
+        elementBody.scrollTop = 3800
+      } else {
+        elementBody.scrollTop = 2000
+      }
     }
   },
   created () {
     this.scroll()
   }
-
 }
 </script>

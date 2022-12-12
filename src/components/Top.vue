@@ -13,14 +13,12 @@ export default {
         const scorllPercent = this.scrollY
         if (scorllPercent > 100) {
           top.classList.add('showNav')
-          // console.log('top')
         } else {
           top.classList.remove('showNav')
         }
       })
     },
     backTop () {
-      // console.log('top')
       const elementBody = document.documentElement
       elementBody.scrollTop = 0
     }

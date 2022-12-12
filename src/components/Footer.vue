@@ -1,10 +1,15 @@
 <template>
  <div class="footer">
   <div class="row">
+    <div class="col-12 d-flex align-item-center justify-content-center">
+      <a href="https://www.linkedin.com/in/tracy-tung-54bb60123/" target="_blank">
+        <img src="../assets/linked_footer.svg" class="mb-2 me-2">
+      </a>
+      <a href="https://www.linkedin.com/in/tracy-tung-54bb60123/" target="_blank">
+        <img src="../assets/github_footer.svg" class="mb-2">
+      </a>
+    </div>
 
-    <a href="https://www.linkedin.com/in/tracy-tung-54bb60123/" target="_blank">
-      <img src="../assets/work/email.svg" class="mx-auto d-block mb-2">
-    </a>
   </div>
 
   <p class="d-block text-center mb-0">Email: madori452@gmail.com</p>

@@ -1,0 +1,279 @@
+<template>
+  <div class="section-js">
+    <div class="row">
+      <p class="title en_font text-center fw-bolder">
+        <img class="d-inline-block mx-auto icon-love" src="../assets/home/logo.svg" alt="">
+      JS
+      </p>
+    </div>
+    <!-- 電腦swiper -->
+    <swiper
+      :slidesPerView="4"
+      :spaceBetween="30"
+      :pagination="{
+        clickable: true,
+        }"
+      :autoplay="{
+        delay: 3500,
+        disableOnInteraction: false,
+      }"
+    :modules="modules"
+      class="d-none d-lg-block mySwiper mt-4"
+    >
+    <swiper-slide v-for="item in js" :key="item.blank">
+      <div class="card-work w-100">
+        <div class="mask"></div>
+        <div class="bg-image" >
+          <a :href="item.blank" target="_blank">
+          <div class="mask en_font">
+              See More
+            </div>
+          </a>
+          <div class="rounded-0 card-img-top" :style="{backgroundImage:'url('+require('../assets/work/all/' + item.srcImg)+')'}"></div>
+        </div>
+        <div class="card-body rounded-0">
+          <h5 class="card-title en_font mt-4">{{item.title}}</h5>
+          <p class="card-text px-3">{{item.content}}</p>
+          <span class="text-primary tag flex-row" v-for="(tags,index) in item.tag" :key="index">{{tags}}</span>
+        </div>
+      </div>
+    </swiper-slide>
+    </swiper>
+
+    <!-- 平板swiper -->
+    <swiper
+      :slidesPerView="2"
+      :spaceBetween="30"
+      :pagination="{
+        clickable: true,
+        }"
+      :autoplay="{
+        delay: 3500,
+        disableOnInteraction: false,
+      }"
+    :modules="modules"
+      class="d-none d-sm-block d-lg-none mySwiper mt-4"
+    >
+    <swiper-slide v-for="item in js" :key="item.blank">
+      <div class="card-work w-100">
+        <div class="mask"></div>
+        <div class="bg-image" >
+          <a :href="item.blank" target="_blank">
+          <div class="mask en_font">
+              See More
+            </div>
+          </a>
+          <div class="rounded-0 card-img-top" :style="{backgroundImage:'url('+require('../assets/work/all/' + item.srcImg)+')'}"></div>
+        </div>
+        <div class="card-body rounded-0">
+          <h5 class="card-title en_font mt-4">{{item.title}}</h5>
+          <p class="card-text px-3">{{item.content}}</p>
+          <span class="text-primary tag flex-row" v-for="(tags,index) in item.tag" :key="index">{{tags}}</span>
+        </div>
+      </div>
+    </swiper-slide>
+    </swiper>
+
+    <!-- 手機swiper -->
+    <swiper
+      :slidesPerView="1"
+      :spaceBetween="30"
+      :pagination="{
+        clickable: true,
+        }"
+      :autoplay="{
+        delay: 3500,
+        disableOnInteraction: false,
+      }"
+      :modules="modules"
+        class="d-block d-sm-none mySwiper mt-4"
+      >
+    <swiper-slide v-for="item in js" :key="item.blank">
+      <div class="card-work w-80 w-sm-100">
+        <div class="mask"></div>
+        <div class="bg-image" >
+          <a :href="item.blank" target="_blank">
+          <div class="mask en_font">
+              See More
+            </div>
+          </a>
+          <div class="rounded-0 card-img-top" :style="{backgroundImage:'url('+require('../assets/work/all/' + item.srcImg)+')'}"></div>
+        </div>
+        <div class="card-body rounded-0">
+          <h5 class="card-title en_font mt-4">{{item.title}}</h5>
+          <p class="card-text px-3">{{item.content}}</p>
+          <span class="text-primary tag flex-row" v-for="(tags,index) in item.tag" :key="index">{{tags}}</span>
+        </div>
+      </div>
+    </swiper-slide>
+    </swiper>
+  </div>
+
+</template>
+
+<script>
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
+// Import Swiper styles
+import 'swiper/swiper.scss'
+import 'swiper/components/navigation/navigation.scss'
+
+// import Swiper core and required module
+// import required modules
+import SwiperCore, {
+  Navigation,
+  Autoplay
+} from 'swiper/core'
+SwiperCore.use([Autoplay, Navigation])
+export default {
+  components: {
+    Swiper,
+    SwiperSlide
+
+  },
+  setup () {
+    return {
+      modules: [Autoplay],
+      js: [{
+        title: 'BMI計算機',
+        content: 'JS練習。計算BMI，並且用localstorage進行BMI狀態儲存。',
+        srcImg: 'js01.png',
+        blank: 'https://codepen.io/Tracy_Tung/pen/XWzzRNZ',
+        tag: ['JS', 'localstorage']
+      },
+      {
+        title: '高雄旅遊網',
+        content: 'JS練習。AJAX進行API串接，呈現旅遊資訊以及區域篩選等內容。',
+        srcImg: 'js02.png',
+        blank: 'https://codepen.io/Tracy_Tung/pen/gOogqLY',
+        tag: ['JS', 'AJAX']
+
+      },
+      {
+        title: 'Todo List',
+        content: 'JS練習。個人待辦清單，可新增、刪除、修改。並可切換不同狀態。',
+        srcImg: 'js03.png',
+        blank: 'https://codepen.io/Tracy_Tung/pen/xxpBreE',
+        tag: ['JS']
+
+      },
+      {
+        title: '農產比價網',
+        content: 'JS練習。用axios串接json資料，並且加上種類篩選及搜尋等功能。',
+        srcImg: 'js04.png',
+        blank: 'https://codepen.io/Tracy_Tung/pen/qBpzmWr',
+        tag: ['JS', 'axios']
+      },
+      {
+        title: '九九乘法表',
+        content: 'JS練習。使用JS的for迴圈，來呈現 1 - 9 的 九九乘法表。',
+        srcImg: 'js05.png',
+        blank: 'https://codepen.io/Tracy_Tung/pen/KKZOxoB',
+        tag: ['JS']
+      }
+      ]
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+@import "../assets/scss/main.scss";
+
+.section-js{
+  background-color: #F7F9FC;
+  padding: 100px 0 200px 0;
+  position: relative;
+  z-index: 0;
+}
+.title{
+  font-size: 40px;
+}
+span.tag{
+  padding: 5px 15px;
+  border:2px solid $mainColor;
+  border-radius: 20px;
+  margin-right: 5px;
+  font-size: 14px;
+  @include phone{
+    font-size: 12px;
+  }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    @include phone{
+    margin-right: 0px !important;
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+h5.card-title {
+  @include phone{
+    font-size: 18px;
+  }
+}
+.card-work{
+  box-shadow: 2px 2px 8px #00000010;
+  height: 340px;
+  background: #fff;
+  @include xl-screen{
+    height: 360px;
+  }
+  @include phone{
+    height: 370px;
+  }
+}
+.card-text{
+  color: #6a6a6a;
+  font-size: 14px;
+  @include phone{
+    font-size: 12px;
+  }
+}
+.bg-image{
+  position: relative;
+}
+.card-img-top{
+  height: 200px;
+  background-size: cover;
+  background-position: 50% 50%;
+  @media (max-width:575px){
+  }
+}
+.mask{
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  background-color: #020202;
+  font-size: 24px;
+  text-align: center;
+  line-height:200px;
+  counter-reset: #ddd;
+  opacity: 0;
+  transition: 0.5s;
+}
+.bg-image a{
+  color: #fff;
+  opacity: 0.5;
+  text-decoration: none;
+}
+.mask:hover{
+  opacity: 0.8;
+}
+</style>

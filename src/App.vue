@@ -1,8 +1,8 @@
 <template>
 
 <Navbar></Navbar>
-<Footer></Footer>
 <Top></Top>
+
 </template>
 
 <style lang="scss">
@@ -17,17 +17,29 @@
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
+ .swiper-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @mixin phone{
+    justify-content: start;
+  }
+}
 .en_font{
   font-family: 'Tiro Gurmukhi', serif;
 }
 a{
   text-decoration: none;
 }
+.icon-love{
+  width: 50px;
+  margin-top: -10px;
+}
 
 </style>
 <script>
-import Navbar from '../src/components/Navbar.vue'
-import Top from '../src/components/Top.vue'
+import Navbar from './components/Navbar.vue'
+import Top from './components/Top.vue'
 
 export default {
   components: {
