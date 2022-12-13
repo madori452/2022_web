@@ -5,7 +5,7 @@
       <a href="https://www.linkedin.com/in/tracy-tung-54bb60123/" target="_blank">
         <img src="../assets/linked_footer.svg" class="mb-2 me-2">
       </a>
-      <a href="https://www.linkedin.com/in/tracy-tung-54bb60123/" target="_blank">
+      <a href="https://github.com/madori452?tab=repositories" target="_blank">
         <img src="../assets/github_footer.svg" class="mb-2">
       </a>
     </div>

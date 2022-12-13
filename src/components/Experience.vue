@@ -12,8 +12,8 @@
           <div class="pulse-box">
             <svg class="pulse-svg" width="50px" height="50px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <circle class="circle first-circle" fill="#fff" cx="19" cy="19" r="10"></circle>
-              <circle class="circle second-circle" fill="#FF6347" cx="19" cy="19" r="10"></circle>
-              <circle class="circle" fill="#fff" cx="18" cy="17" r="8"></circle>
+              <circle class="circle second-circle" fill="#FF6347" cx="18.5" cy="19" r="10"></circle>
+              <circle class="circle" fill="#fff" cx="18" cy="17" r="7"></circle>
             </svg>
           </div>
         </div>
@@ -21,17 +21,16 @@
       <div class="row">
         <div class="col-md-2 mt-4 ms-md-3">
           <p class="h5 en_font fw-bolder due">2022 04-11 前端學習</p>
-          <p class="mt-2 content mb-1">Bootstrap 5 網頁切版整合術</p>
-          <p class="content mb-1">JavaScript 入門篇 - 學徒的試煉</p>
-          <p class="content mb-1">JS 必修篇最終關卡任務</p>
-          <p class="content mb-1">JavaScript 核心篇(學習中)</p>
-          <p class="content mb-1">Vue 3 實戰影音課程</p>
+          <p class="mt-2 content mb-1">Bootstrap 5</p>
+          <p class="content mb-1">JavaScript 基礎語法</p>
+          <p class="content mb-1">JavaScript ES6(學習中)</p>
+          <p class="content mb-1">Vue 3</p>
         </div>
         <div class="col-md-3 mt-4 ms-md-3">
           <p class="h5 en_font fw-bolder due">2020-2022 ECS 精英電腦 UI Designer & 前端設計</p>
           <p class="h6 mt-1 en_font">Pretso 品牌官網</p>
           <p class="mt-2 content mb-1">
-            公司進行新品牌「Pretso」官網規劃以及前端設計。網站使用SVG動畫互動，並且以創新的故事流的方式呈現案例說明。
+            公司進行新品牌「Pretso」官網規劃以及前端設計。網站使用SVG動畫互動，並且以創新故事流的方式呈現案例說明。
           </p>
           <p class="h6 mt-4 en_font">充電樁管理平台</p>
           <p class="mt-2 content mb-1">
@@ -39,7 +38,7 @@
           </p>
           <p class="h6 mt-4 en_font">國光客運智慧車載管理系統</p>
           <p class="mt-2 content mb-1">
-            團隊工程師進行前端開發。使用Azure Devops  協同合作
+            團隊工程師進行前端開發。使用Azure Devops 協同合作
           </p>
         </div>
         <div class="col-md-3 mt-4 ms-md-3">
@@ -58,8 +57,8 @@
           <p class="h5 en_font fw-bolder due">2017-2018 亞果元素 網頁前端設計</p>
           <p class="h6 mt-1 en_font">接觸前端領域</p>
           <p class="mt-2 content mb-1">
-            負責商品網頁的前端製作，在此時期大烈使用Bootstrap。
-            並學習使用zeplin和設計師溝通。
+            負責商品網頁的前端製作，在此時期大量使用Bootstrap。
+            並學習使用zeplin和網頁設計師溝通。
           </p>
           <p class="h6 mt-4 en_font">參與App設計</p>
           <p class="mt-2 content mb-1">

@@ -16,7 +16,7 @@
             <p class="mb-0 h5 en_font mt-2">Experience</p>
           </div>
 
-          <a class="nav-link" target="_blank" href="https://drive.google.com/file/d/14J83q9WdPH2RPXpKzEMZKr8CzkR2fB54/view?usp=share_link"  @click="closeNav">
+          <a class="nav-link" target="_blank" href="https://drive.google.com/file/d/1bJC5FmiqMoflFSR-BVueBNIME2ix-Zy5/view?usp=share_link"  @click="closeNav">
             <p class="mb-0 h5 en_font resume">Resume</p>
           </a>
       </div>
