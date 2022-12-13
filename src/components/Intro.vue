@@ -11,6 +11,8 @@
 
 h1.typing{
   font-size: 58px;
+  position: relative;
+  z-index: 3;
   @include pad{
     font-size: 40px;
   }
