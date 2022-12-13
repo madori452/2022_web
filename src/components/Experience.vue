@@ -1,7 +1,6 @@
 <template>
   <div class="section section-experience">
-    <div class="container-fluid">
-
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-anchor-placement="center-bottom">
       <div class="row">
           <p class="title en_font text-center fw-bolder">
             <img class="d-inline-block mx-auto icon-love" src="../assets/home/logo.svg" alt="">
@@ -10,7 +9,13 @@
       </div>
       <div class="row mt-4">
         <div class="timeline">
-          <div class="pulsating-circle"></div>
+          <div class="pulse-box">
+            <svg class="pulse-svg" width="50px" height="50px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle class="circle first-circle" fill="#fff" cx="19" cy="19" r="10"></circle>
+              <circle class="circle second-circle" fill="#FF6347" cx="19" cy="19" r="10"></circle>
+              <circle class="circle" fill="#fff" cx="18" cy="17" r="8"></circle>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -84,52 +89,71 @@ p.due{
     font-size: 18px;
   }
 }
-.pulsating-circle {
+// ---------------circle
+@mixin circle($circleSize) {
+  width: $circleSize;
+  height: $circleSize;
+  border-radius: $circleSize/2;
+}
+
+/* pulse in SVG */
+svg.pulse-svg {
+  overflow: visible;
   position: absolute;
-  left: 5%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: 20px;
-  height: 20px;
-
-  &:before {
-    content: '';
-    position: relative;
-    display: block;
-    width: 300%;
-    height: 300%;
-    box-sizing: border-box;
-    margin-left: -100%;
-    margin-top: -100%;
-    border-radius: 45px;
-    background-color: $mainColor;
-    animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  top: -20px;
+  left: 66px;
+  .first-circle {
+    fill: rgb(65, 103, 255);
+    transform: scale(0.5);
+    transform-origin: center center;
+    animation: pulse-me 2s linear infinite;
   }
-
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 0 8px rgba(0,0,0,.3);
+  .second-circle {
+    @extend .first-circle;
+    animation-delay: 0.5s;
   }
 }
 
-@keyframes pulse-ring {
-  0% {
-    transform: scale(.33);
-    -webkit-transform:scale(.33);
-
+/* pulse in CSS */
+.pulse-css {
+  @include circle(30px);
+  background: rgb(65, 103, 255);;
+  position: relative;
+  &:before,
+  &:after {
+    content: "";
+    @include circle(20px);
+    background-color: rgba(65, 103, 255, 0.794);;
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    margin: auto;
+    transform: scale(0.5);
+    transform-origin: center center;
+    animation: pulse-me 1.5s linear infinite;
   }
-  80%, 100% {
+  &:after {
+    animation-delay: 1s;
+  }
+}
+
+@keyframes pulse-me {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(3);
     opacity: 0;
   }
 }
+// ---------------circle
 
 .timeline{
   position: relative;

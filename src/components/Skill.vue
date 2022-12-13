@@ -1,6 +1,6 @@
 <template>
   <div class="section section-skill">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-anchor-placement="center-bottom">
       <div class="row">
           <p class="title en_font text-center fw-bolder">
             <img class="d-inline-block mx-auto icon-love" src="../assets/home/logo.svg" alt="">
@@ -8,7 +8,7 @@
           </p>
       </div>
       <div class="row mt-4">
-        <div class="col-md-3">
+        <div class="col-md-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-delay="400">
           <div class="card rounded-0 p-1 me-1">
             <div class="row">
               <img class="d-block mx-auto skill-icon mt-4" src="../assets/JS.svg">
@@ -22,7 +22,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3"  data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-delay="600">
           <div class="card rounded-0 p-1 me-1">
             <div class="row">
               <img class="d-block mx-auto skill-icon mt-4" src="../assets/Vue.svg">
@@ -36,7 +36,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3"  data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-delay="800">
           <div class="card rounded-0 p-1 me-1">
             <div class="row">
               <img class="d-block mx-auto skill-icon mt-4" src="../assets/Web.svg">
@@ -51,7 +51,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3"  data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-delay="1000">
           <div class="card rounded-0 p-1 me-1">
             <div class="row">
               <img class="d-block mx-auto skill-icon mt-4" src="../assets/Design.svg">

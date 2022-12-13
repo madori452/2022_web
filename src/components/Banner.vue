@@ -1,5 +1,5 @@
 <template>
-  <div class="background home-bg  d-flex align-items-center  justify-content-center">
+  <div class="background home-bg  d-flex align-items-center  justify-content-center"  data-aos="fade-up"  data-aos-duration="800" data-aos-once="true" data-aos-delay="1000">
      <div class="d-flex align-items-center">
       <div class="container  d-flex justify-content-center">
         <Intro class="mt-5"></Intro>

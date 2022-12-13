@@ -16,7 +16,7 @@
             <p class="mb-0 h5 en_font mt-2">Experience</p>
           </div>
 
-          <a class="nav-link" target="_blank" href="https://drive.google.com/file/d/1P7Q8L_IFE3GGn0pItqpJl8I38shw6jww/view?usp=share_link"  @click="closeNav">
+          <a class="nav-link" target="_blank" href="https://drive.google.com/file/d/14J83q9WdPH2RPXpKzEMZKr8CzkR2fB54/view?usp=share_link"  @click="closeNav">
             <p class="mb-0 h5 en_font resume">Resume</p>
           </a>
       </div>
@@ -52,6 +52,13 @@
   border-radius: 20px;
   color: #fff;
   padding: 8px 10px;
+  @include pad{
+    width: 120px;
+    padding: 13px 15px;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: -5px;
+  }
 }
 .navbar-toggler{
   @include pad{

@@ -1,7 +1,7 @@
 <template>
   <Loading :active="isLoading"></Loading>
   <Banner></Banner>
-  <About></About>
+  <About data-aos="fade-up"></About>
   <Skill></Skill>
   <Experience></Experience>
   <Web></Web>

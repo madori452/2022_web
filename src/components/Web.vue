@@ -1,6 +1,6 @@
 <template>
   <div class="section-web">
-    <div class="row">
+    <div class="row" data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-anchor-placement="center-bottom">
       <p class="title en_font text-center fw-bolder">
         <img class="d-inline-block mx-auto icon-love" src="../assets/home/logo.svg" alt="">
       Web
@@ -8,6 +8,7 @@
     </div>
     <!-- 電腦swiper -->
     <swiper
+      data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-anchor-placement="center-bottom"
       :slidesPerView="4"
       :spaceBetween="30"
       :autoplay="{
@@ -39,6 +40,7 @@
 
     <!-- 平板swiper -->
     <swiper
+      data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-anchor-placement="center-bottom"
       :slidesPerView="2"
       :spaceBetween="30"
       :autoplay="{
@@ -69,7 +71,7 @@
     </swiper>
 
     <!-- 手機swiper -->
-    <div class="d-block d-sm-none mySwiper mt-4">
+    <div class="d-block d-sm-none mySwiper mt-4" data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-anchor-placement="center-bottom">
       <div class="card-all" v-for="item in web" :key="item.blank">
         <div class="card-work w-80 w-sm-100">
           <div class="mask"></div>
