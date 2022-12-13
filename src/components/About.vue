@@ -33,9 +33,9 @@
               <span class="align-bottom info">madori452@gmail.com</span>
 
               <img src="../assets/github.svg" class="ms-3">
-              <span class="align-bottom info">@madori452</span>
+              <span class="align-bottom info ms-2 ms-sm-0">@madori452</span>
 
-              <img src="../assets/linked.svg" class="ms-3">
+              <img src="../assets/linked.svg" class="ms-2 ms-sm-3">
               <span class="align-bottom info">Tracy Tung</span>
             </div>
           </div>
@@ -70,7 +70,7 @@ span.info{
   font-weight: 900;
   color:$mainColor;
   @include phone{
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 img.me{

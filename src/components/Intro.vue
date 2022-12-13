@@ -2,7 +2,7 @@
   <div class="hello">
     <img class="d-block mx-auto" src="../assets/home/logo.svg" alt="">
     <h1 class="typing typewriter en_font text-center">HI ! I’m Tracy</h1>
-    <p class="text-center">融和<strong>「前端技術」</strong>以及<strong>「使用者體驗」</strong>創造有趣的作品!🐈 </p>
+    <p class="text-center slogan">融和<strong>「前端技術」</strong>以及<strong>「使用者體驗」</strong>創造有趣的作品!🐈 </p>
   </div>
 </template>
 
@@ -38,7 +38,11 @@ h1.typing{
     blink-caret .5s step-end infinite;
     animation-delay: 1.5s;
 }
-
+.slogan{
+  @include phone{
+    padding: 0px 20px;
+  }
+}
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
