@@ -127,7 +127,7 @@ export default {
           title: 'Pretso 官網',
           content: '品牌網站，使用BS4和jQuery。身兼前端程式開發及協同設計。',
           srcImg: 'web03.png',
-          blank: 'https://madori452.github.io/2022_web/dist/#/works/Pretso',
+          blank: 'https://www.pretso.green/Index/index.html',
           tag: ['BS4', 'SVG', 'jQuery']
         },
 
