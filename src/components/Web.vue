@@ -143,14 +143,14 @@ export default {
           title: 'Scented Candel電商網站',
           content: 'Vue 3開發的電商網站購物前台。使用Vue-Cli進行專案管理。',
           srcImg: 'web01.png',
-          blank: 'https://madori452.github.io/Vue_shop/dist/#/user/index',
+          blank: 'https://madori452.github.io/ScentedCandel/#/',
           tag: ['Vue CLI', 'BS5', 'SCSS']
         },
         {
           title: 'Scented Candel後台網站',
           content: 'Vue 3開發的電商網站商品後台。使用Vue-Cli進行專案管理。',
           srcImg: 'web02.png',
-          blank: 'https://madori452.github.io/Vue_shop/dist/#/login',
+          blank: 'https://madori452.github.io/ScentedCandel/#/login',
           tag: ['Vue CLI', 'BS5', 'SCSS']
         },
         {
